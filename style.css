@@ -4,6 +4,7 @@ body {
   background: linear-gradient(180deg, #d9e9ff, #ffffff);
   color: #222;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .topo {
@@ -58,9 +59,10 @@ body {
 }
 
 .jogos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
   padding: 20px;
 }
 
@@ -69,7 +71,8 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
+  cursor: default;
+  width: 180px;
 }
 
 .card img {
@@ -81,6 +84,7 @@ body {
 .card p {
   padding: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 .card:hover {
@@ -93,6 +97,7 @@ footer {
   background: #00a2ff;
   color: white;
   padding: 20px;
+  margin-top: 40px;
 }
 
 .botao {
