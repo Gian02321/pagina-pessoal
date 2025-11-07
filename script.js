@@ -1,8 +1,4 @@
-function abrirInfo(jogo) {
-  alert("Você clicou em: " + jogo + " 😎");
-}
-
-// Animação ao rolar
+// Apenas animação suave de entrada
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".card").forEach(card => {
     const pos = card.getBoundingClientRect().top;
@@ -13,7 +9,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Iniciar animação invisível
 document.querySelectorAll(".card").forEach(card => {
   card.style.opacity = "0";
   card.style.transform = "translateY(40px)";
